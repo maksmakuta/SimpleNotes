@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/FMain">
+
+    <fragment
+        android:id="@+id/FMain"
+        tools:layout="@layout/f_main"
+        android:name="com.makuta.simplenotes.fragment.main.FMain">
+        <action
+            android:id="@+id/action_FMain_to_FEditor"
+            app:destination="@id/FEditor" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FEditor"
+        tools:layout="@layout/f_edit"
+        android:name="com.makuta.simplenotes.fragment.editor.FEditor" />
+
+</navigation>

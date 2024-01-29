@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_rename"
+        android:icon="@drawable/sticky_notes_rename"
+        android:title="@string/menu_rename" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/sticky_notes_share"
+        android:title="@string/menu_share" />
+
+    <item
+        android:id="@+id/menu_del"
+        android:icon="@drawable/sticky_notes_del"
+        android:title="@string/menu_del" />
+</menu>
