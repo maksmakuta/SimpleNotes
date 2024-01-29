@@ -10,7 +10,6 @@ Simple Notes App for Android
   - ViewModel
   - LiveData and MutableLiveData
   - RecyclerView
-  -
 - Google Material Library
 
 ## Screenshots
