@@ -54,7 +54,6 @@ class FEditor : Fragment(), MenuProvider {
         menuInflater.inflate(R.menu.menu_edit, menu)
         if (noteTitle.isEmpty()) {
             menu.findItem(R.id.menu_share).isVisible = false
-            menu.findItem(R.id.menu_del).isVisible = false
         }
     }
 
@@ -75,13 +74,6 @@ class FEditor : Fragment(), MenuProvider {
                         getString(R.string.share_using)
                     )
                 )
-                return true
-            }
-
-            R.id.menu_del -> {
-                if (vm.note.value != null) {
-                    vm.delete(vm.note.value!!)
-                }
                 return true
             }
 

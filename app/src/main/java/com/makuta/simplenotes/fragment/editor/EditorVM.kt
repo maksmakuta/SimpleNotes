@@ -28,11 +28,4 @@ class EditorVM : ViewModel() {
         }
     }
 
-    fun delete(note: Note) {
-        viewModelScope.launch(Dispatchers.IO) {
-            db.notes().del(note)
-            operation.postValue(true)
-        }
-    }
-
 }

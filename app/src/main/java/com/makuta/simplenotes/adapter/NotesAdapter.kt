@@ -26,6 +26,12 @@ class NotesAdapter(
         }
     }
 
+    fun clear() {
+        val c = data.size
+        data.clear()
+        notifyItemRangeRemoved(0, c)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NotesHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = INoteBinding.inflate(layoutInflater, parent, false)

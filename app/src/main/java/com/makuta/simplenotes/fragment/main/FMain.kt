@@ -25,7 +25,6 @@ import com.makuta.simplenotes.databinding.DRenameBinding
 import com.makuta.simplenotes.databinding.FMainBinding
 import java.io.File
 
-
 class FMain : Fragment(), NotesAdapter.OnNoteActionListener, PopupMenu.OnMenuItemClickListener {
 
     private val vm: MainVM by viewModels()
@@ -59,11 +58,6 @@ class FMain : Fragment(), NotesAdapter.OnNoteActionListener, PopupMenu.OnMenuIte
                     BUNDLE_FILE to ""
                 )
             )
-        }
-
-        binding.fabNew.setOnLongClickListener {
-            vm.load()
-            true
         }
     }
 
